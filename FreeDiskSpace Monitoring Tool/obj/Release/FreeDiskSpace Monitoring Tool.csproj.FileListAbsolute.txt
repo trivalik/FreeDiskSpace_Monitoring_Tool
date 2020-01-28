@@ -1,0 +1,12 @@
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\bin\Release\FreeDiskSpace Monitoring Tool.exe.config
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\bin\Release\FreeDiskSpace Monitoring Tool.exe
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\bin\Release\FreeDiskSpace Monitoring Tool.pdb
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace Monitoring Tool.csprojAssemblyReference.cache
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace_Monitoring_Tool.DiskInfoForm.resources
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace_Monitoring_Tool.MainForm.resources
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace_Monitoring_Tool.Properties.Resources.resources
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace_Monitoring_Tool.SetCriticalForm.resources
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace Monitoring Tool.csproj.GenerateResource.cache
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace Monitoring Tool.csproj.CoreCompileInputs.cache
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace Monitoring Tool.exe
+C:\Users\Александр\source\repos\FreeDiskSpace Monitoring Tool\FreeDiskSpace Monitoring Tool\obj\Release\FreeDiskSpace Monitoring Tool.pdb
