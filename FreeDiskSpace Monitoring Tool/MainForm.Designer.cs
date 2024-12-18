@@ -71,7 +71,7 @@
             this.bSetCritical.Name = "bSetCritical";
             this.bSetCritical.Size = new System.Drawing.Size(220, 25);
             this.bSetCritical.TabIndex = 1;
-            this.bSetCritical.Text = "Встановити граничні значення";
+            this.bSetCritical.Text = "Set limit values";
             this.bSetCritical.UseVisualStyleBackColor = false;
             // 
             // cbMeasureUnits
@@ -91,9 +91,9 @@
             this.LbMeasure.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LbMeasure.Location = new System.Drawing.Point(296, 15);
             this.LbMeasure.Name = "LbMeasure";
-            this.LbMeasure.Size = new System.Drawing.Size(100, 13);
+            this.LbMeasure.Size = new System.Drawing.Size(83, 13);
             this.LbMeasure.TabIndex = 3;
-            this.LbMeasure.Text = "Відображати у: ";
+            this.LbMeasure.Text = "To display in:";
             // 
             // MainForm
             // 

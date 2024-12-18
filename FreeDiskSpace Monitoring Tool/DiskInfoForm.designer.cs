@@ -43,9 +43,9 @@
             this.LblDriveName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblDriveName.Location = new System.Drawing.Point(168, 9);
             this.LblDriveName.Name = "LblDriveName";
-            this.LblDriveName.Size = new System.Drawing.Size(50, 20);
+            this.LblDriveName.Size = new System.Drawing.Size(40, 20);
             this.LblDriveName.TabIndex = 0;
-            this.LblDriveName.Text = "Диск ";
+            this.LblDriveName.Text = "Disk";
             // 
             // LblDriveType
             // 
@@ -53,9 +53,9 @@
             this.LblDriveType.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblDriveType.Location = new System.Drawing.Point(23, 46);
             this.LblDriveType.Name = "LblDriveType";
-            this.LblDriveType.Size = new System.Drawing.Size(112, 18);
+            this.LblDriveType.Size = new System.Drawing.Size(88, 18);
             this.LblDriveType.TabIndex = 1;
-            this.LblDriveType.Text = "Тип пристрою: ";
+            this.LblDriveType.Text = "Device type:";
             // 
             // LblDriveFormat
             // 
@@ -63,9 +63,9 @@
             this.LblDriveFormat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblDriveFormat.Location = new System.Drawing.Point(23, 85);
             this.LblDriveFormat.Name = "LblDriveFormat";
-            this.LblDriveFormat.Size = new System.Drawing.Size(141, 18);
+            this.LblDriveFormat.Size = new System.Drawing.Size(87, 18);
             this.LblDriveFormat.TabIndex = 2;
-            this.LblDriveFormat.Text = "Файлова система: ";
+            this.LblDriveFormat.Text = "File system:";
             // 
             // LblTotalSpace
             // 
@@ -73,9 +73,9 @@
             this.LblTotalSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblTotalSpace.Location = new System.Drawing.Point(23, 129);
             this.LblTotalSpace.Name = "LblTotalSpace";
-            this.LblTotalSpace.Size = new System.Drawing.Size(148, 18);
+            this.LblTotalSpace.Size = new System.Drawing.Size(103, 18);
             this.LblTotalSpace.TabIndex = 3;
-            this.LblTotalSpace.Text = "Загальна місткість: ";
+            this.LblTotalSpace.Text = "Total capacity:";
             // 
             // LblFreeSpace
             // 
@@ -83,9 +83,9 @@
             this.LblFreeSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblFreeSpace.Location = new System.Drawing.Point(62, 169);
             this.LblFreeSpace.Name = "LblFreeSpace";
-            this.LblFreeSpace.Size = new System.Drawing.Size(63, 18);
+            this.LblFreeSpace.Size = new System.Drawing.Size(82, 18);
             this.LblFreeSpace.TabIndex = 4;
-            this.LblFreeSpace.Text = "Вільно: ";
+            this.LblFreeSpace.Text = "Dismissed:";
             // 
             // LblOccupiedSpace
             // 
@@ -93,9 +93,9 @@
             this.LblOccupiedSpace.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.LblOccupiedSpace.Location = new System.Drawing.Point(62, 208);
             this.LblOccupiedSpace.Name = "LblOccupiedSpace";
-            this.LblOccupiedSpace.Size = new System.Drawing.Size(74, 18);
+            this.LblOccupiedSpace.Size = new System.Drawing.Size(45, 18);
             this.LblOccupiedSpace.TabIndex = 5;
-            this.LblOccupiedSpace.Text = "Зайнято: ";
+            this.LblOccupiedSpace.Text = "Busy:";
             // 
             // button1
             // 

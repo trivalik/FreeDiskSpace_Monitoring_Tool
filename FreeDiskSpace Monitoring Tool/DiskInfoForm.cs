@@ -58,7 +58,6 @@ namespace FreeDiskSpace_Monitoring_Tool
             g.FillPie(occupiedSpaceBrush, diagramArea, 0, 360 - freeSizeProportion);
             g.FillPie(freeSpaceBrush, diagramArea, 360 - freeSizeProportion, freeSizeProportion);
             g.DrawEllipse(Pens.Black, diagramArea);
-            
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FreeDiskSpace_Monitoring_Tool
+﻿namespace FreeDiskSpace_Monitoring_Tool
 {
     public class DiskState
     {

@@ -6,11 +6,10 @@ namespace FreeDiskSpace_Monitoring_Tool
 {
     public partial class MainForm : Form
     {
-          
         private NotifyIcon notification;            //об'єкт для відображення іконки у треї
         private Icon mainIcon;                      //об'єкт для зберігання іконки додатку
         private ContextMenuStrip notifyMenu;        //меню для іконки у треї
-        
+
 
         public event EventHandler ExitMenuItem_Clicked;
         public event EventHandler Notify_DoubleClicked;
@@ -20,8 +19,8 @@ namespace FreeDiskSpace_Monitoring_Tool
         public event EventHandler SetCriticalsButton_Clicked;
         public event EventHandler DiskDataGrid_DoubleClicked;
         public event EventHandler HelpMenuItem_Clicked;
-        
-       
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -31,7 +30,7 @@ namespace FreeDiskSpace_Monitoring_Tool
             notification.Visible = false;
             notification.Text = "FreeDiskSpace Monitoring Tool";
             notification.DoubleClick += Notify_DoubleClick;
-            
+
             //меню для іконки у треї
             notifyMenu = new ContextMenuStrip();
             ToolStripMenuItem showMenuItem = new ToolStripMenuItem("Отобразить окно");
@@ -60,20 +59,17 @@ namespace FreeDiskSpace_Monitoring_Tool
 
             //налаштування таблиці для відображення даних
             diskDataGridView.ColumnCount = 4;
-            diskDataGridView.Columns[0].Name = "Мітка тому";
-            diskDataGridView.Columns[1].Name = "Загальний об'єм пам'яті";
-            diskDataGridView.Columns[2].Name = "Об'єм вільної пам'яті";
-            diskDataGridView.Columns[3].Name = "Ліміт вільної пам'яті";
+            diskDataGridView.Columns[0].Name = "Tagged as";
+            diskDataGridView.Columns[1].Name = "Total amount of memory";
+            diskDataGridView.Columns[2].Name = "The amount of free memory";
+            diskDataGridView.Columns[3].Name = "Free memory limit";
             foreach(DataGridViewColumn column in diskDataGridView.Columns)
             {
                 column.SortMode = DataGridViewColumnSortMode.NotSortable;
             }
             diskDataGridView.DoubleClick += DiskDataGridView_DoubleClick;
-
-            
         }
 
-        
 
         public DataGridView GetDataGrid()
         {
@@ -112,16 +108,14 @@ namespace FreeDiskSpace_Monitoring_Tool
         private void DiskDataGridView_DoubleClick(object sender, EventArgs e)
         {
             DiskDataGrid_DoubleClicked?.Invoke(sender, e);
-            
         }
-        
 
         //обробники подій натискання на пункти меню у треї
         private void ExitMenuItem_Click(object sender, EventArgs e)
         {
             ExitMenuItem_Clicked?.Invoke(sender, e);
         }
-        
+
         private void Notify_DoubleClick(object sender, EventArgs e)
         {
             Notify_DoubleClicked?.Invoke(sender, e);
@@ -138,7 +132,7 @@ namespace FreeDiskSpace_Monitoring_Tool
         {
             MainForm_Closing?.Invoke(sender, e);
         }
-        
+
         //обробник зміни обраного значення у ComboBox, що відповідає за одиниці виміру пам'яті
         private void CbMeasureUnits_SelectedValueChanged(object sender, EventArgs e)
         {
@@ -149,7 +143,7 @@ namespace FreeDiskSpace_Monitoring_Tool
         //викликає відповідне діалогове вікно
         private void BSetCritical_Click(object sender, EventArgs e)
         {
-            SetCriticalsButton_Clicked?.Invoke(sender, e);    
+            SetCriticalsButton_Clicked?.Invoke(sender, e);
         }
     }
 }

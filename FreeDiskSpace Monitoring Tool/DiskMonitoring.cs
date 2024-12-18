@@ -23,9 +23,9 @@ namespace FreeDiskSpace_Monitoring_Tool
         {
             add { if (_limitExceeded.GetInvocationList().Length == 1) { _limitExceeded += value; } }
             remove { _limitExceeded -= value; }
-        }   
+        }
         public MemoryUnits currentUnit;                                     //поточна обрана одиниця виміру даних
-        
+
         public DiskMonitoring(string fileName)
         {
             _limitExceeded = new Action<Dictionary<string, DiskState>>(LimitExceededInitMethod);
@@ -48,7 +48,7 @@ namespace FreeDiskSpace_Monitoring_Tool
             }
 
             if (File.Exists(saveFileName)) {
-                
+
                 using (FileStream file = new FileStream(saveFileName, FileMode.Open, FileAccess.Read))
                 {
                     DataContractJsonSerializer json = new DataContractJsonSerializer(typeof(Dictionary<string, long>));
@@ -62,8 +62,7 @@ namespace FreeDiskSpace_Monitoring_Tool
                     }
                 }
             } else
-            {   
-                File.Create(saveFileName); 
+            {
                 storedCriticalValues = new Dictionary<string, long>();
             }
         }
@@ -104,7 +103,7 @@ namespace FreeDiskSpace_Monitoring_Tool
             foreach(var item in disks)
             {
                 storedCriticalValues.Add(item.Key, item.Value.CriticalValue);
-            }           
+            }
             using (FileStream file = new FileStream(saveFileName, FileMode.Create, FileAccess.Write))
             {
                 DataContractJsonSerializer json = new DataContractJsonSerializer(typeof(Dictionary<string, long>));
@@ -132,7 +131,7 @@ namespace FreeDiskSpace_Monitoring_Tool
             }
            // disks.Clear();
             disks = temp;
-            
+
             temp = new Dictionary<string, DiskState>();
 
             foreach (var item in disks)
@@ -145,7 +144,7 @@ namespace FreeDiskSpace_Monitoring_Tool
 
 
             _limitExceeded?.Invoke(temp);
-            
+
             //temp.Clear();
         }
 

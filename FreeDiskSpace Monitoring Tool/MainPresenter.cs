@@ -21,15 +21,12 @@ namespace FreeDiskSpace_Monitoring_Tool
         private Form AlertWindow;                   //вікно для відображення повідомлення
         private Label AlertMessage;                 //керуючий елемент, що зберігає текст повідомлення
 
-       
 
         public MainPresenter(MainForm form, DiskMonitoring monitor)
         {
 
             _mainForm = form;
             _diskData = monitor;
-
-            
 
             _dataGrid = _mainForm.GetDataGrid();
 
@@ -43,7 +40,7 @@ namespace FreeDiskSpace_Monitoring_Tool
 
             //створення та налаштування таймеру для оновлення даних та виведення повідомлення
             _updateTimer = new Timer();
-            _updateTimer.Interval = 5000;
+            _updateTimer.Interval = 1000;
             _updateTimer.Tick += _updateTimer_Tick;
             _updateTimer.Start();
 
@@ -110,7 +107,7 @@ namespace FreeDiskSpace_Monitoring_Tool
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 _diskData.LoadData(_dataGrid);
-                
+
                 _diskData.UpdateCriticalValues(dialog.GetCriticalValues());
             }
         }
@@ -172,7 +169,7 @@ namespace FreeDiskSpace_Monitoring_Tool
                     _messageTimer.Stop();
                 }
             }
-            
+
             //obj.Clear();
         }
 
